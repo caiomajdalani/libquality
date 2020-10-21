@@ -1,0 +1,38 @@
+{
+  "name": "libquality",
+  "version": "1.0.0",
+  "description": "LibQuality API",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start:local": "pm2 start ecosystem-config/local.config.js && pm2 logs libquality",
+    "start:dev": "pm2 start ecosystem-config/development.config.js && pm2 logs libquality",
+    "stop": "pm2 delete libquality",
+    "logs": "pm2 logs libquality --lines 10000",
+    "up:local": "ENV=local docker-compose up --build",
+    "up:dev": "ENV=development docker-compose up --build",
+    "test": "jest"
+  },
+  "author": "Caio Majdalani",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "17.1.0",
+    "body-parser": "1.19.0",
+    "consign": "0.1.6",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "express-swagger-generator": "1.1.17",
+    "express-winston": "4.0.2",
+    "helmet": "3.21.2",
+    "mathjs": "7.5.1",
+    "moment": "2.29.1",
+    "mysql2": "2.1.0",
+    "sequelize": "5.21.3",
+    "traverson": "7.0.1",
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.0",
+    "sequelize-mock": "^0.10.2"
+  }
+}
