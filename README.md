@@ -60,7 +60,7 @@ $ npm test
     - [Consign](https://www.npmjs.com/package/consign) - Autoload scripts
     - [Cors](https://www.npmjs.com/package/cors) - A Connect/Express middleware to enable CORS.
     - [Express](https://www.npmjs.com/package/express) - Web framework
-    - [Express-Swagger-Generator](https://www.npmjs.com/package/express-swagger-generator) - A module to serve swagger files based on express-swaggerize-ui(https://github.com/pgroot/express-swaggerize-ui) and Doctrine-File(https://github.com/researchgate/doctrine-file)
+    - [Express-Swagger-Generator](https://www.npmjs.com/package/express-swagger-generator) - A module to serve swagger files based on [express-swaggerize-ui](https://github.com/pgroot/express-swaggerize-ui) and [Doctrine-File](https://github.com/researchgate/doctrine-file)
     - [Express-Winston](https://www.npmjs.com/package/express-winston) - Winston middleware for Express
     - [Helmet](https://www.npmjs.com/package/helmet) - Improves security of Express apps by setting various HTTP headers
     - [Mathjs](https://www.npmjs.com/package/mathjs) - A extensive math library for JavaScript and Node.js

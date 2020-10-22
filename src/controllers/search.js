@@ -76,7 +76,6 @@ module.exports = {
                  * However, they permit only 10 reqs per minute (https://api.github.com/rate_limit), with a unauthenticated user.
                  * With a authenticated user, we can make 30 req per minute. But for some repos (like angular, which have 3200 issues opened at this moment),
                  * this will not work as expected (for this motive i removed angular from the possible search). And the response time is too much longer (58s for react, which have 572 issues opened). 
-                 * I will use my personal token on this test,  but if this were get to prod env, i can suggest some future workarounds:
                  * 
                  * 1. Instead use the API to get the data from GitHub API directly, we can make Cron jobs (like workers) to get this data overtime (not realtime),
                  * and save them on the MySQL (cause this data dont change a lot in one day for a example). With this, we can make the API get the data from MySQL, 
@@ -106,7 +105,6 @@ module.exports = {
                         { 
                             'Accept': 'application/vnd.github.v3+json', // Required by github v3 API
                             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36', // It can be any valid user agent
-                            'Authorization': 'token 44de29a5b6e2f5f85b5028a90d4dc8ae17f428cc' // Just for this test only, i will delete this token in the future. The best practice is to make this a secret environment variable.
                         }
                     })
 
