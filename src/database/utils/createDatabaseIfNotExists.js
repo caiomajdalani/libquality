@@ -12,7 +12,7 @@ const createDatabaseIfNotExists = (Sequelize, dbConfig) => {
             return data
         })
         .catch(error => {
-            logger.error({message: `[!] UNABLE TO CREATE THE DATABASE ${dbConfig.database}: `, meta: new Error(error)})
+            logger.error({message: `[!] UNABLE TO CREATE THE DATABASE ${dbConfig.database}: `, meta: error})
             return error
         });
 };

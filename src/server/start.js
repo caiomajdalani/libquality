@@ -25,11 +25,11 @@ module.exports = async app => {
         
             await app.src.database.mysql.sequelize.close()
                 .then(() => logger.info('[*] SEQUELIZE GET DISCONNECTED ON API TERMINATION.'))
-                .catch(err => logger.error({message: "[!] ERROR DISCONNECTING SEQUELIZE.", meta: new Error(err)}))
+                .catch(err => logger.error({message: "[!] ERROR DISCONNECTING SEQUELIZE.", meta: err}))
             
             _server.close((err) => {
                 if (err) {
-                    logger.error({message: "[!] ERROR CLOSING SERVER.", meta: new Error(err)})
+                    logger.error({message: "[!] ERROR CLOSING SERVER.", meta: err})
                     process.exit(1)
                 }
                 logger.info('[*] SERVER GET DISCONNECTED.')
@@ -38,7 +38,7 @@ module.exports = async app => {
         });
         
     } catch (error) {
-        logger.error({message: `[!] UNABLE TO START SERVER: `, meta: new Error(error)})
+        logger.error({message: `[!] UNABLE TO START SERVER: `, meta: error})
     }
 
 }

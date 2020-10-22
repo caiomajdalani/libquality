@@ -22,7 +22,7 @@ module.exports = app => {
           logger.info(`[*] DATABASE ${app.src.database.config.database} CONNECTED SUCCESSFULLY`)
         })
         .catch(error => {
-          logger.error({message: `[!] UNABLE TO CONNECT TO THE DATABASE ${app.src.database.config.database}: `, meta: new Error(error)})
+          logger.error({message: `[!] UNABLE TO CONNECT TO THE DATABASE ${app.src.database.config.database}: `, meta: error})
         });
 
     mysql = {

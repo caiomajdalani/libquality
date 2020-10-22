@@ -128,7 +128,7 @@ describe('Services', ()=>{
             it('Error', ()=>{
                 process.env.NODE_ENV = 'testLog'
                 const logger = require('../services/utils/logger')
-                let res = logger.error({message: `Testing..`, meta: new Error(Error)})
+                let res = logger.error({message: `Testing..`, meta: new Error()})
                 expect(res).toBeTruthy()
             })
             it('Info', ()=>{

@@ -19,7 +19,7 @@ try {
     .then("./src/server/start.js")
     .into(app);
 } catch (error) {
-  logger.error({message: "[!] INTERNAL SERVER ERROR.", meta: new Error(error)})
+  logger.error({message: "[!] INTERNAL SERVER ERROR.", meta: error})
 }
     
 // ----------------------------------------------------------------------------------------------

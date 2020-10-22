@@ -15,7 +15,7 @@ describe('Database - ', () =>{
     
         it('Without Env variables injected', async () => {
             const config = require('../database/config')
-            expect(config.database).toEqual('venturus')
+            expect(config.database).toEqual('libquality')
             expect(config.username).toEqual('root')
             expect(config.password).toEqual('admin')
             expect(config.params.host).toEqual('localhost')

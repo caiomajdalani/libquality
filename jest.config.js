@@ -8,7 +8,11 @@ module.exports = {
         "/logs/",
         "/mysql/",
         "/ecosystem-config/",
-        "/src/docs"
+        "/src/docs",
+        "/src/controllers",
+        "/src/routes",
+        "/src/index.js",
+        "/src/server"
     ],
     setupFilesAfterEnv: [
         './jestSetup.js'
