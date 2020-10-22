@@ -105,6 +105,7 @@ module.exports = {
                         { 
                             'Accept': 'application/vnd.github.v3+json', // Required by github v3 API
                             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36', // It can be any valid user agent
+                            'Authorization': `token ${process.env.GITHUB_TOKEN}` // Please ensure to have a ".env" file with "GITHUB_TOKEN=token" (your github personal token https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
                         }
                     })
 

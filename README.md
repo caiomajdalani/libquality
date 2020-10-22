@@ -28,6 +28,18 @@ $ npm run start:local
 $ npm run up:dev
 ```
 
+# IMPORTANT
+
+- Ensure that you create a ".env" file with your personal access token to "GITHUB_TOKEN" variable. The API uses it at "Authorization" headers.
+
+```diff
+{ 
+  'Authorization': `token ${process.env.GITHUB_TOKEN}` 
+}
+```
+
+(https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
+
 ## Docs
 
 - To see swagger docs:

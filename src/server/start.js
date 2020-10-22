@@ -3,6 +3,7 @@ const logger = require('../services/utils/logger')
 const createDatabaseIfNotExists = require('../database/utils/createDatabaseIfNotExists')
 const dbConfig = require('../database/config')
 const Sequelize = require('sequelize')
+require('dotenv').config()
 let _server 
 
 module.exports = async app => {
