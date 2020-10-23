@@ -11,7 +11,8 @@
     "logs": "pm2 logs libquality --lines 10000",
     "up:local": "ENV=local docker-compose up --build",
     "up:dev": "ENV=development docker-compose up --build",
-    "test": "jest"
+    "test": "jest",
+    "debug": "pm2 start ecosystem-config/local.config.js --node-args='--inspect-brk' --watch"
   },
   "author": "Caio Majdalani",
   "license": "ISC",

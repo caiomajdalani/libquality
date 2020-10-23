@@ -3,7 +3,7 @@ module.exports = {
         name: "libquality",
         script: "./src/index.js",
         instances: "1",
-        exec_mode: "cluster",
+        exec_mode: "fork",
         error_file: "./logs/pm2/api_error.log",
         out_file: "./logs/pm2/api_out.log",
         ignore_watch: [
@@ -19,7 +19,8 @@ module.exports = {
         trace: true,
         watch: true,
         node_args: [
-            "--max_old_space_size=4096"
+            "--max_old_space_size=4096",
+            "--inspect"
         ],
         max_memory_restart: '1G',
         env: {
