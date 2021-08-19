@@ -2,9 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: libquality
+  description: LibQuality is a API for check issues on github
   annotations:
     github.com/project-slug: caiomajdalani/libquality
 spec:
   type: service
-  lifecycle: unknown
+  lifecycle: experimental
   owner: backstage
+  providesApis:
+    - libquality
