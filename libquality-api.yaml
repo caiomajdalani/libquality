@@ -6,7 +6,7 @@ metadata:
   tags:
     - rest
   links:
-    - url: https://github.com/swagger-api/swagger-petstore
+    - url: https://github.com/caiomajdalani/libquality
       title: GitHub Repo
       icon: github
     - url: https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore.yaml
