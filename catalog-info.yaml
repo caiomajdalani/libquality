@@ -5,6 +5,6 @@ metadata:
   annotations:
     github.com/project-slug: caiomajdalani/libquality
 spec:
-  type: other
+  type: service
   lifecycle: unknown
   owner: backstage
