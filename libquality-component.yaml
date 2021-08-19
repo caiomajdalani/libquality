@@ -10,6 +10,6 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: backstage
+  owner: background
   providesApis:
     - libquality
