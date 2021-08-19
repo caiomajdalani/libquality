@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: libquality
+  annotations:
+    github.com/project-slug: caiomajdalani/libquality
+spec:
+  type: other
+  lifecycle: unknown
+  owner: backstage
