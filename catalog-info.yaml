@@ -3,8 +3,10 @@ kind: Component
 metadata:
   name: libquality
   description: LibQuality is a API for check issues on github
-  annotations:
-    github.com/project-slug: caiomajdalani/libquality
+  links:
+    - url: https://github.com/caiomajdalani/libquality
+      title: GitHub Repo
+      icon: github
 spec:
   type: service
   lifecycle: experimental
